@@ -1,0 +1,9 @@
+services:
+  debian:
+    container_name: extc-debian
+    image: extc-debian
+    build:
+      context: .
+      dockerfile: ./Dockerfile.debian
+    volumes:
+      - .:/home/
